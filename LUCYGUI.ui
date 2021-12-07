@@ -27,7 +27,7 @@
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>C:/Users/SATISH/Desktop/ui.gif</pixmap>
+     <pixmap>D:/PYTHON PROJECTS/LUCIFER/ui.gif</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
