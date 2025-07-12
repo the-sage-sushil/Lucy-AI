@@ -194,7 +194,7 @@ class MainTherad(QThread):
 
             elif "who made you" in self.statement or "who created you" in self.statement or "who discovered you" in self.statement:
                 speak("I was built by Sushil Mishra, dude! he is graet ")
-                print("I was built by Mirthula")
+                print("I was built by Sushil Mishra, dude! he is great ")
 
             elif "open stackoverflow" in self.statement:
                 webbrowser.open_new_tab("https://stackoverflow.com/login")
@@ -237,7 +237,7 @@ class MainTherad(QThread):
         r = sr.Recognizer()
         with sr.Microphone() as source:
             print("Listening...")
-            audio = r.listen(source, timeout=0.1, phrase_time_limit=7)
+            audio = r.listen(source, phrase_time_limit=7)
 
         try:
             statement = r.recognize_google(audio, language='en-in')
@@ -259,7 +259,7 @@ class Main(QMainWindow):
         self.ui.pushButton_2.clicked.connect(self.close)
 
     def startTask(self):
-        self.ui.movie=QtGui.QMovie("C:/Users/SATISH/Desktop/ui.gif")
+        self.ui.movie=QtGui.QMovie("S:/Sushil/Github/Lucy-AI/ui.gif")
         self.ui.label.setMovie(self.ui.movie)
         self.ui.movie.start()
         timer=QTimer(self)
